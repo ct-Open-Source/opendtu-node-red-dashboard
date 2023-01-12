@@ -1,0 +1,1435 @@
+[
+    {
+        "id": "f320e01654b908b5",
+        "type": "switch",
+        "z": "315274cfc4cf0ef5",
+        "name": "Wechselspannungsseite: BKW 1",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "/0/current",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/0/efficiency",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/0/frequency",
+                "vt": "str"
+            },
+            {
+                "t": "regex",
+                "v": "/0/power$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "cont",
+                "v": "/0/powerdc",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/0/powerfactor",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/0/reactivepower",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/0/temperature",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/0/voltage",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/0/yieldday",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/0/yieldtotal",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 11,
+        "x": 710,
+        "y": 1060,
+        "wires": [
+            [],
+            [],
+            [],
+            [
+                "19a40aabec2590f9",
+                "9142ca67c343f55d"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+                "45bdd11e0b9396e1"
+            ],
+            [
+                "665db24f96c947c1"
+            ]
+        ]
+    },
+    {
+        "id": "4c55555cb9f64432",
+        "type": "switch",
+        "z": "315274cfc4cf0ef5",
+        "name": "Moduldaten: BKW 1",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "/1/current",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/1/power",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/1/voltage",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/1/yieldday",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/1/yieldtotal",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/2/current",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/2/power",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/2/voltage",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/2/yieldday",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/2/yieldtotal",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/3/current",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/3/power",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/3/voltage",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/3/yieldday",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/3/yieldtotal",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/4/current",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/4/power",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/4/voltage",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/4/yieldday",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/4/yieldtotal",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 20,
+        "x": 740,
+        "y": 1300,
+        "wires": [
+            [
+                "ea25a418981e1057"
+            ],
+            [
+                "2be58e627cb11a95"
+            ],
+            [
+                "0ed5ed5b2d69e0d9"
+            ],
+            [
+                "375d0b1bcb57428d"
+            ],
+            [],
+            [
+                "b433ab945a9c7a4f"
+            ],
+            [
+                "a31ccd38399c16d5"
+            ],
+            [
+                "291d844ba751dfcd"
+            ],
+            [
+                "d48be08794098b1d"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4c480947bf7e875b",
+        "type": "switch",
+        "z": "315274cfc4cf0ef5",
+        "name": "DTU-Daten:1",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "/ip",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/hostname",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/rssi",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/uptime",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 710,
+        "y": 720,
+        "wires": [
+            [
+                "6b410e5be73694f6"
+            ],
+            [
+                "dc939b8724dd71a1"
+            ],
+            [
+                "6afe625adc50b76c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "665db24f96c947c1",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "10c47d7e1f2d662e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Gesamtproduktion",
+        "format": "{{msg.payload}} kWh",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1050,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "19a40aabec2590f9",
+        "type": "ui_gauge",
+        "z": "315274cfc4cf0ef5",
+        "name": "",
+        "group": "10c47d7e1f2d662e",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "Momentanleistung",
+        "label": "W",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "600",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 1050,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "45bdd11e0b9396e1",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "10c47d7e1f2d662e",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Tagesproduktion",
+        "format": "{{msg.payload}} Wh",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1040,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "2be58e627cb11a95",
+        "type": "ui_gauge",
+        "z": "315274cfc4cf0ef5",
+        "name": "Panel 1: Momentanleistung",
+        "group": "10c47d7e1f2d662e",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Panel 1: Momentanleistung",
+        "label": "Watt",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "400",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 1500,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "0ed5ed5b2d69e0d9",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "10c47d7e1f2d662e",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "Panel 1: Spannung",
+        "label": "Spannung",
+        "format": "{{msg.payload}} Volt",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1470,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "ea25a418981e1057",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "10c47d7e1f2d662e",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "Panel 1: Strom",
+        "label": "Strom",
+        "format": "{{msg.payload}} Ampere",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1460,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "a31ccd38399c16d5",
+        "type": "ui_gauge",
+        "z": "315274cfc4cf0ef5",
+        "name": "Panel 2: Momentanleistung",
+        "group": "10c47d7e1f2d662e",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Panel 2: Momentanleistung",
+        "label": "Watt",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "400",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 1740,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "291d844ba751dfcd",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "10c47d7e1f2d662e",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "Panel 2: Spannung",
+        "label": "Spannung",
+        "format": "{{msg.payload}} Volt",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1710,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "b433ab945a9c7a4f",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "10c47d7e1f2d662e",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "name": "Panel 2: Strom",
+        "label": "Strom",
+        "format": "{{msg.payload}} Ampere",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1700,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "375d0b1bcb57428d",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "10c47d7e1f2d662e",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "Panel 1: Tagesproduktion",
+        "label": "Tagesproduktion",
+        "format": "{{msg.payload}} Wh",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1490,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "d48be08794098b1d",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "10c47d7e1f2d662e",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "name": "Panel 2: Tagesproduktion",
+        "label": "Tagesproduktion",
+        "format": "{{msg.payload}} Wh",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1730,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "9142ca67c343f55d",
+        "type": "ui_chart",
+        "z": "315274cfc4cf0ef5",
+        "name": "",
+        "group": "10c47d7e1f2d662e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Leistungsverlauf",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1040,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a95beb17e0548007",
+        "type": "switch",
+        "z": "315274cfc4cf0ef5",
+        "name": "Wechselspannungsseite: BKW 2",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "/0/current",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/0/efficiency",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/0/frequency",
+                "vt": "str"
+            },
+            {
+                "t": "regex",
+                "v": "/0/power$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "cont",
+                "v": "/0/powerdc",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/0/powerfactor",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/0/reactivepower",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/0/temperature",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/0/voltage",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/0/yieldday",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/0/yieldtotal",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 11,
+        "x": 710,
+        "y": 1600,
+        "wires": [
+            [],
+            [],
+            [],
+            [
+                "e423bbee4943746f",
+                "5296ad0b280d7af3"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+                "6906be27d15ca137"
+            ],
+            [
+                "d4bb1d265fbc091b"
+            ]
+        ]
+    },
+    {
+        "id": "7d3ca43eaf113f5f",
+        "type": "switch",
+        "z": "315274cfc4cf0ef5",
+        "name": "Moduldaten: BKW 2",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "/1/current",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/1/power",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/1/voltage",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/1/yieldday",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/1/yieldtotal",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/2/current",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/2/power",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/2/voltage",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/2/yieldday",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/2/yieldtotal",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/3/current",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/3/power",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/3/voltage",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/3/yieldday",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/3/yieldtotal",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/4/current",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/4/power",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/4/voltage",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/4/yieldday",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/4/yieldtotal",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 20,
+        "x": 740,
+        "y": 1840,
+        "wires": [
+            [
+                "7458b8ecab0236b7"
+            ],
+            [
+                "c23f371d67c283ff"
+            ],
+            [
+                "d87b391f45f02f0d"
+            ],
+            [
+                "5e9d5524160d92c9"
+            ],
+            [],
+            [
+                "0d678c88354a01f0"
+            ],
+            [
+                "1965c074e9e3b207"
+            ],
+            [
+                "3b3a859df30880dc"
+            ],
+            [
+                "df17456e0144ee71"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d4bb1d265fbc091b",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "94d49633c91668c1",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Gesamtproduktion",
+        "format": "{{msg.payload}} kWh",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1050,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "e423bbee4943746f",
+        "type": "ui_gauge",
+        "z": "315274cfc4cf0ef5",
+        "name": "",
+        "group": "94d49633c91668c1",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "Momentanleistung",
+        "label": "W",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "600",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 1050,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "6906be27d15ca137",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "94d49633c91668c1",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Tagesproduktion",
+        "format": "{{msg.payload}} Wh",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1040,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "c23f371d67c283ff",
+        "type": "ui_gauge",
+        "z": "315274cfc4cf0ef5",
+        "name": "Panel 1: Momentanleistung",
+        "group": "94d49633c91668c1",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Panel 1: Momentanleistung",
+        "label": "Watt",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "400",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 1500,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "d87b391f45f02f0d",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "94d49633c91668c1",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "Panel 1: Spannung",
+        "label": "Spannung",
+        "format": "{{msg.payload}} Volt",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1470,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "7458b8ecab0236b7",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "94d49633c91668c1",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "Panel 1: Strom",
+        "label": "Strom",
+        "format": "{{msg.payload}} Ampere",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1460,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "1965c074e9e3b207",
+        "type": "ui_gauge",
+        "z": "315274cfc4cf0ef5",
+        "name": "Panel 2: Momentanleistung",
+        "group": "94d49633c91668c1",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Panel 2: Momentanleistung",
+        "label": "Watt",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "400",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 1740,
+        "y": 1900,
+        "wires": []
+    },
+    {
+        "id": "3b3a859df30880dc",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "94d49633c91668c1",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "Panel 2: Spannung",
+        "label": "Spannung",
+        "format": "{{msg.payload}} Volt",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1710,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "0d678c88354a01f0",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "94d49633c91668c1",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "name": "Panel 2: Strom",
+        "label": "Strom",
+        "format": "{{msg.payload}} Ampere",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1700,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "5e9d5524160d92c9",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "94d49633c91668c1",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "Panel 1: Tagesproduktion",
+        "label": "Tagesproduktion",
+        "format": "{{msg.payload}} Wh",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1490,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "df17456e0144ee71",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "94d49633c91668c1",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "name": "Panel 2: Tagesproduktion",
+        "label": "Tagesproduktion",
+        "format": "{{msg.payload}} Wh",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1730,
+        "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "5296ad0b280d7af3",
+        "type": "ui_chart",
+        "z": "315274cfc4cf0ef5",
+        "name": "",
+        "group": "94d49633c91668c1",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Leistungsverlauf",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1040,
+        "y": 1580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dc939b8724dd71a1",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "73ab39f7b8b28f15",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Hostname",
+        "label": "Hostname",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1170,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "6b410e5be73694f6",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "73ab39f7b8b28f15",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "IP-Adresse",
+        "label": "IP-Adresse",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1170,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "a7c18de6d62e18a4",
+        "type": "switch",
+        "z": "315274cfc4cf0ef5",
+        "name": "WR-Namen",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "/name",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 710,
+        "y": 660,
+        "wires": [
+            [
+                "f11c1f653ebcf44e"
+            ]
+        ]
+    },
+    {
+        "id": "6afe625adc50b76c",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "73ab39f7b8b28f15",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "WLAN-Signalstärke",
+        "label": "WLAN-Signalstärke",
+        "format": "{{msg.payload}} dBm",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1190,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "f11c1f653ebcf44e",
+        "type": "join",
+        "z": "315274cfc4cf0ef5",
+        "name": "Namen zusammenfügen",
+        "mode": "custom",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": ", ",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "4",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 950,
+        "y": 600,
+        "wires": [
+            [
+                "e9b2b280ac867e57"
+            ]
+        ]
+    },
+    {
+        "id": "e9b2b280ac867e57",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "73ab39f7b8b28f15",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Bediente Wechselrichter",
+        "label": "Bediente Wechselrichter",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1210,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "4efcad2976f63f6c",
+        "type": "switch",
+        "z": "315274cfc4cf0ef5",
+        "name": "DTU-Daten: 2",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "/ip",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/hostname",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/rssi",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "/uptime",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 720,
+        "y": 900,
+        "wires": [
+            [
+                "8fe25df2afafe82a"
+            ],
+            [
+                "68812bf07a779478"
+            ],
+            [
+                "e8b10ccde85efa6f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "68812bf07a779478",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "acb4bffe5bccb368",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Hostname",
+        "label": "Hostname",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1170,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "8fe25df2afafe82a",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "acb4bffe5bccb368",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "IP-Adresse",
+        "label": "IP-Adresse",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1170,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "29a14c791fab494a",
+        "type": "switch",
+        "z": "315274cfc4cf0ef5",
+        "name": "WR-Namen",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "/name",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 710,
+        "y": 840,
+        "wires": [
+            [
+                "72def7208d7f4ace"
+            ]
+        ]
+    },
+    {
+        "id": "e8b10ccde85efa6f",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "acb4bffe5bccb368",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "WLAN-Signalstärke",
+        "label": "WLAN-Signalstärke",
+        "format": "{{msg.payload}} dBm",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1190,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "72def7208d7f4ace",
+        "type": "join",
+        "z": "315274cfc4cf0ef5",
+        "name": "Namen zusammenfügen",
+        "mode": "custom",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": ", ",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "4",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 950,
+        "y": 780,
+        "wires": [
+            [
+                "f614cd24efb9aebc"
+            ]
+        ]
+    },
+    {
+        "id": "f614cd24efb9aebc",
+        "type": "ui_text",
+        "z": "315274cfc4cf0ef5",
+        "group": "acb4bffe5bccb368",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Bediente Wechselrichter",
+        "label": "Bediente Wechselrichter",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1210,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "fcad19a9ae6f88f3",
+        "type": "switch",
+        "z": "315274cfc4cf0ef5",
+        "name": "Wechselrichter-Seriennummer",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "123456789012",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "123456789012",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 310,
+        "y": 1380,
+        "wires": [
+            [
+                "f320e01654b908b5",
+                "4c55555cb9f64432"
+            ],
+            [
+                "a95beb17e0548007",
+                "7d3ca43eaf113f5f"
+            ]
+        ]
+    },
+    {
+        "id": "10c47d7e1f2d662e",
+        "type": "ui_group",
+        "name": "BKW 1: HM-700 GS",
+        "tab": "8605844808ca14ef",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "94d49633c91668c1",
+        "type": "ui_group",
+        "name": "BKW 2: heise HM-700",
+        "tab": "8605844808ca14ef",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "73ab39f7b8b28f15",
+        "type": "ui_group",
+        "name": "DTU 1: GS",
+        "tab": "8605844808ca14ef",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "acb4bffe5bccb368",
+        "type": "ui_group",
+        "name": "DTU 2: heise",
+        "tab": "8605844808ca14ef",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8605844808ca14ef",
+        "type": "ui_tab",
+        "name": "Solardaten",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
